@@ -1,0 +1,32 @@
+.list {
+  /* display: flex;
+  justify-content: space-between; */
+  padding: 0;
+}
+
+.list__item {
+  list-style-type: '\1F431';
+}
+
+.list__box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.list__btn {
+  /* margin: 0 20px; */
+  border-radius: 50px;
+  color: #ffffff;
+  background-color: #f9a826;
+  cursor: pointer;
+  border: 0;
+  width: 80px;
+  height: 25px;
+  font-size: 15px;
+  font-family: 'Quicksand';
+}
+.list__text {
+  display: contents;
+  font-size: 18px;
+}
