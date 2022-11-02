@@ -4,6 +4,9 @@
   outline: 1px solid #f9a826;
   padding: 44px 28px;
   border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -khtml-border-radius: 20px;
+  -moz-border-radius: 20px;
   margin-bottom: 10px;
   overflow: hidden;
   @include mq(mob-only) {
