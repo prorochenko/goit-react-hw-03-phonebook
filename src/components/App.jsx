@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Contacts from './Contacts/Contacts';
 import Section from './Section/Section';
 import Filter from './Filter/Filter';
-import css from './CommonStyle.module.css';
+import css from './CommonStyle.module.scss';
 import Form from './Form/Form';
 import { nanoid } from 'nanoid';
 import Notiflix from 'notiflix';
@@ -54,7 +54,6 @@ export default class App extends Component {
   };
 
   componentDidUpdate(prevProps, prevState) {
-    console.log(this.componentDidUpdate);
     if (this.state.contacts !== prevState.contacts) {
       localStorage.setItem('contacts', JSON.stringify(this.state.contacts));
     }

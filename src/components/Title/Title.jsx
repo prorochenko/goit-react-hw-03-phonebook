@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import css from './Title.module.css';
+import css from './Title.module.scss';
 
 const Title = ({ title, children }) => {
   return (

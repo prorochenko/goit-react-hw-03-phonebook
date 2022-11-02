@@ -1,3 +1,5 @@
+@import 'styles/shared.scss';
+
 .btn {
   border-radius: 50px;
   color: #ffffff;
@@ -5,9 +7,19 @@
   cursor: pointer;
   font-family: 'Quicksand';
   border: 0;
+
+  font-size: 18px;
   width: 319px;
   height: 50px;
-  font-size: 18px;
+  @include mq(mob-only) {
+    width: 219px;
+    height: 50px;
+  }
+
+  @include mq(tab) {
+    width: 319px;
+    height: 50px;
+  }
 }
 
 .container {

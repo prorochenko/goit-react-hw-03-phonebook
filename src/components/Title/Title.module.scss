@@ -1,5 +1,6 @@
+@import 'styles/shared.scss';
+
 .title {
-  size: 18px;
   color: #000000;
 
   margin: 0;
@@ -9,4 +10,11 @@
   font-size: 18px;
   line-height: 1.22;
   font-family: 'Quicksand';
+  @include mq(mob-only) {
+    font-size: 18px;
+  }
+
+  @include mq(tab) {
+    font-size: 18px;
+  }
 }

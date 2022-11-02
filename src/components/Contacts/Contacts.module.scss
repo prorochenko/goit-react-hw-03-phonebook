@@ -1,3 +1,5 @@
+@import 'styles/shared.scss';
+
 .list {
   /* display: flex;
   justify-content: space-between; */
@@ -23,10 +25,28 @@
   border: 0;
   width: 80px;
   height: 25px;
-  font-size: 15px;
+
   font-family: 'Quicksand';
+  @include mq(mob-only) {
+    width: 60px;
+    height: 25px;
+    font-size: 12px;
+  }
+
+  @include mq(tab) {
+    width: 80px;
+    height: 25px;
+    font-size: 15px;
+  }
 }
 .list__text {
   display: contents;
   font-size: 18px;
+  @include mq(mob-only) {
+    font-size: 14px;
+  }
+
+  @include mq(tab) {
+    font-size: 18px;
+  }
 }
